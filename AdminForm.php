@@ -12,8 +12,8 @@ class AdminForm
     public function addAdminMenu()
     {
         add_menu_page(
-        'TirageAuSort - votre plugin TirageAuSort',
-        'TirageAuSort',
+        'Tirage Au Sort - votre plugin TirageAuSort',
+        'Tirage Au Sort',
         'manage_options',
         'TirageAuSort',
         array($this, 'generateHtml'),
@@ -29,8 +29,8 @@ class AdminForm
         );
         add_submenu_page(
             'TirageAuSort',
-            'Tirage Au Sort',
-            'Tirage Au Sort',
+            'Winner',
+            'Winner',
             'manage_options',
             'TirageAuSort_winner',
             array($this, 'winner')
