@@ -143,8 +143,6 @@ class TirageAuSort{
             else{
                 $tirageSession->createMessage("error", "Votre email a ete deja utilise dans autre inscription");
             }    
-        }else{
-            $tirageSession->createMessage("error", "Rempli le formulaire entier svp");
         }
     }
     public function checkMessages()
@@ -159,9 +157,11 @@ class TirageAuSort{
                     " . $message["message"] . "
                 </p>
             ");
+            
         }
 
         $message = $tirageSession->destroy();
+        
 
     }
 
