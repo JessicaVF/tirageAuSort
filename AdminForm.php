@@ -36,6 +36,8 @@ class AdminForm
             array($this, 'winner')
         );
     }
+// This function display a basic html message to explain the plugin 
+
     function generateHtml(){
         echo '<h1>' . get_admin_page_title() . '</h1>';
         echo '<p>Bienvenue sur la page d\'accueil du plugin</p>';
@@ -43,6 +45,9 @@ class AdminForm
         echo  " 
               <p> Si vous voulez choisir le gagnant, vous devez cliquer sur le sous-menu Tirage au sort. Mais, attention : à chaque fois que vous cliquez, un nouveau gagnant sera sélectionné et les informations du précédent seront effacées (vous pouvez toujours les trouver dans la liste des inscrits.</p> ";
     }
+
+// This function recover the list of participants from the Data Base and display them in a html table
+
     function getInfo(){
 
         global $wpdb;
@@ -71,6 +76,9 @@ class AdminForm
         $html .= '<tbody></table>';
         echo $html;
     }
+
+    // This function pick a random winner form the list of participants in the Data Base and display the winner in a html table
+
     function winner(){
 
         global $wpdb;
