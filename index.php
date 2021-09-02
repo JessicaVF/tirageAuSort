@@ -165,6 +165,8 @@ class TirageAuSort{
     
         wp_register_style('TirageAuSort', plugins_url('style.css', __FILE__));
         wp_enqueue_style('TirageAuSort');
+        wp_register_script('TirageAuSort', plugins_url('script.js', __FILE__));
+        wp_enqueue_script('TirageAuSort');
         
     }
 }
@@ -208,13 +210,6 @@ new TirageAuSort();
 
 
 
-//     public static function loadFile()
-//     {
-    
-//         wp_register_style('CarForm', plugins_url('style.css', __FILE__));
-//         wp_enqueue_style('CarForm');
-//         wp_register_script('MyFormulaire', plugins_url('script.js', __FILE__));
-//         wp_enqueue_script('MyFormulaire');
-//     }
+
 
 
