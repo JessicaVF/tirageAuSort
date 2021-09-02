@@ -1,0 +1,20 @@
+/* In this file we add style to the messages that will appears when there's a problem 
+(or a success) with the "add Participant Form"
+
+The base for all the messages is the style in "tirage-info". The color will later will change
+if the message is an "error" or a "success".
+
+*/
+
+.tirage-info {
+  border: 2px black solid;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.error {
+  background-color: red;
+}
+.success {
+  background-color: green;
+}
