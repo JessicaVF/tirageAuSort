@@ -9,7 +9,10 @@ Author URI: https://www.linkedin.com/in/jessica-villar-fuentes/
 License: GPL2
 */
 
+
+// With the "requires" we connect with other files to manage the messages and the administration section
 require_once 'TirageSession.php';
+require_once 'AdminForm.php';
 
 class TirageAuSort{
     
@@ -35,6 +38,9 @@ class TirageAuSort{
 
        // This action call the function 'loadFile', in this case is for "connect" with the css
         add_action('init', array('tirageAuSort', 'loadFile'));
+    
+        // We instance the Admin Form so it can start working
+        new AdminForm();
     }
     
     // The function that it's call by the shorcode. This function display a form
@@ -172,44 +178,3 @@ class TirageAuSort{
 }
 // We instance our class so it get to work
 new TirageAuSort();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// class CarForm
-// {
-//     public function __construct()
-//     {
-//         
-
-//         new Form_Admin();
-//     }
-
-
-
-
-
-
-
